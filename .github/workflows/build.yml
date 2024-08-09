@@ -19,7 +19,7 @@ jobs:
           echo "SHORT_SHA=$(git rev-parse --short=8 HEAD)" >> $GITHUB_ENV
       - name: Assemble
         env:
-          SHA_SHORT: ${{ secrets.STEAM_USERNAME }}
+          SHA_SHORT: ${{ env.SHORT_SHA }}
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
         run: |
@@ -32,4 +32,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref }}
           asset_name: cavaux-${{ github.ref_name }}.0.zip
-          file: release/cavaux-${{ github.ref_name }}.0.zip
+          file: releases/cavaux-${{ github.ref_name }}.0.zip
