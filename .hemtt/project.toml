@@ -1,0 +1,34 @@
+name = "7th Cavalry Auxiliary Mod"
+author = "7th Cavalry S3 Mod Team"
+prefix = "cavaux"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "README*.md",  # Translated READMEs get moved to root in a hook (virtual file system)
+    "LICENSE",
+    "logo_cavaux_ca.paa",
+    "meta.cpp",
+]
+exclude = [
+    "*.psd",        # By default this list is empty
+]
+
+[version]
+major = 0
+minor = 0
+patch = 0
+build = 0
+
+[hemtt.launch.default]
+workshop = [
+    "450814997" # CBA_A3's Workshop ID
+]
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+    "-filePatching"
+]

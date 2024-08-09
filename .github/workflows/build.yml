@@ -1,0 +1,35 @@
+name: Deploy
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Setup steamcmd
+        uses: CyberAndrii/setup-steamcmd@v1
+      - name: Get short commit hash
+        run: |
+          git rev-parse --short=8 HEAD
+          echo "SHORT_SHA=$(git rev-parse --short=8 HEAD)" >> $GITHUB_ENV
+      - name: Assemble
+        env:
+          SHA_SHORT: ${{ secrets.STEAM_USERNAME }}
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+        run: |
+          $env:Path += ";$PWD\scripts"
+          echo "Building ${{ github.ref_name }} $env:SHA_SHORT"
+          python scripts\assemble.py --username $env:STEAM_USERNAME --password $env:STEAM_PASSWORD -s $env:SHA_SHORT
+      - name: Upload release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref }}
+          asset_name: cavaux-${{ github.ref_name }}.0.zip
+          file: release/cavaux-${{ github.ref_name }}.0.zip

@@ -1,0 +1,10 @@
+*.pbo
+.hemttout
+*.biprivatekey
+[R|r]elease
+[R|r]eleases
+.vscode
+config.json
+testConfig.json
+.cavauxout
+.cavauxout.7z

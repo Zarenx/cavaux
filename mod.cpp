@@ -1,0 +1,12 @@
+name = "7th Cavalry Gaming Auxiliary Modpack DevBuild";
+picture = "logo_cavaux_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/7cav/7CavAddon";
+description = "7th Cavalry Gaming Auxiliary Modpack";
+logo = "logo_cavaux_ca.paa";
+logoOver = "logo_cavaux_ca.paa";
+tooltip = "7th Cavalry Gaming Auxiliary Modpack DevBuild";
+tooltipOwned = "7th Cavalry Gaming Owned";
+overview = "7th Cavalry Gaming Auxiliary Modpack...";
+author = "7th Cavalry S3 Mod Team";
+overviewPicture = "logo_cavaux_ca.paa";

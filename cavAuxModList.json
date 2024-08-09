@@ -1,0 +1,179 @@
+{
+    "workshop": {
+        "1911374016": {
+            "name": "Ace Vehicle Medical",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1911374016",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Medical menus while in vehicles."
+        },
+        "2522638637": {
+            "name": "ACE3 Arsenal Extended - Core",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2522638637",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Adds panels to condense arsenal screen."
+        },
+        "2522642015": {
+            "name": "ACE3 Arsenal Extended for USP AIO",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2522642015",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Adds extended arsenal support for USP."
+        },
+        "2260572637": {
+            "name": "BettIR (Legacy v0.2.1)",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "IR helmet and flashlights"
+        },
+        "1314910827": {
+            "name": "Breaching Charge",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1314910827",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Candidate for removal. Breaching charge too stronk."
+        },
+        "2095827925": {
+            "name": "Brighter Flares",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2095827925",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Brighter flares."
+        },
+        "2095882226": {
+            "name": "Brighter Flares (ACE Compatibilty Patch)",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2095882226",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "ACE compat for Brighter Flares"
+        },
+        "1889104923": {
+            "name": "Brush Clearing",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1889104923",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "ACE option to clear brush."
+        },
+        "2944592059": {
+            "name": "Crew Served Maaws",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2944592059",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Buddy loading for MAAWS"
+        },
+        "2262006564": {
+            "name": "cTab 1erGTD",
+            "url": "https://steamcommunity.com/workshop/filedetails/?id=2262006564",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "cTab functionality"
+        },
+        "1713801249": {
+            "name": "dzn MG Tripod",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1713801249",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Tripod for 240/mortars."
+        },
+        "2034363662": {
+            "name": "Enhanced Movement Rework",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2034363662",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Vault/Climb interactions. Updated version."
+        },
+        "2513044572": {
+            "name": "Fawks' Enhanced NVGs",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2513044572",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "NVG customizations."
+        },
+        "1883956552": {
+            "name": "Interiors for CUP",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1883956552",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Replaces cup buildings with enterable Livonia ones."
+        },
+        "1839874719": {
+            "name": "KAT Notebook",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1839874719",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Notebook for CAS & MEDEVAC 9 lines"
+        },
+        "1803586009": {
+            "name": "Ladder Tweak",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1803586009",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "3x movespeed on Ladders"
+        },
+        "2472780935": {
+            "name": "M224 60mm Mortar (ACE)",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2472780935",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "M224 60mm Mortar (ACE)"
+        },
+        "1340701737": {
+            "name": "NATO Markers +",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Adds additional markings."
+        },
+        "2013446344": {
+            "name": "Simple Map Tools",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2013446344",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Adds interactions on map screen."
+        },
+        "2021778690": {
+            "name": "TFTW Female Characters",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2021778690",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Adds female faces."
+        },
+        "2371800141": {
+            "name": "TSF JPC 2.0 & LV-119",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2371800141",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Candidate for removal. MC Vests"
+        },
+        "3088316904": {
+            "name": "Vanilla Weapon Optics: All NVG Compatible",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3088316904",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "NVG compatibility for vanilla optics."
+        },
+        "2039704764": {
+            "name": "Slightly Bounce GL Smoke Shell",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2039704764",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Bouncy smokes"
+        },
+        "1578884800": {
+            "name": "Window Breaker",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Break Windows"
+        },
+        "2409760971": {
+            "name": "FA-18EF Super Hornet and ace compat",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409760971",
+            "requireResigning": true,
+            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
+            "comment": "Compat addon for FA-18 that enables use of missles."
+        }
+    }
+}
