@@ -168,6 +168,13 @@
             "License": "License permits",
             "comment": "Break Windows"
         },
+        "1552807725": {
+            "name": "FA-18-Super-Hornet-BETA",
+            "url": "https://steamcommunity.com/workshop/filedetails/?id=1552807725",
+            "requireResigning": true,
+            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
+            "comment": "Add the FA-18"
+        },
         "2409760971": {
             "name": "FA-18EF Super Hornet and ace compat",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409760971",
