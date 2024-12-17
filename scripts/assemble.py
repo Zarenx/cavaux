@@ -99,6 +99,17 @@ def get_commit_id():
 
 
 def download_mod_files(complete_mod_list, STEAM_LOGIN, STEAM_PASS, verbose=False):
+    # Check if password and username is set
+    if STEAM_LOGIN == "" and STEAM_PASS == "":
+        print("Warning: No steamcmd username and password provided skipping download")
+        return
+    elif STEAM_LOGIN == "":
+        print("Warning: No steamcmd username provided skipping download")
+        return
+    elif STEAM_PASS == "":
+        print("Warning: No steamcmd password provided skipping download")
+        return
+
     login_cmd = [
         STEAMCMD,
         '+force_install_dir', WORKDIR,
@@ -143,6 +154,7 @@ def main():
     parser.add_argument('-p', '--password', type=str)
     parser.add_argument('-C', '--config', type=str)
     parser.add_argument('-s', '--commit', type=str)
+    parser.add_argument('-d', '--data', type=str)
     parser.add_argument('--verbose', action='store_true')
     parser.add_argument('--dryrun', action='store_false')
 
@@ -172,8 +184,10 @@ def main():
     # Checking required tools
     check_required_tools()
 
+    providerFile = args.data if args.data else "cavAuxModList.json"
+
     # Obtain list
-    modListPath = os.path.join(PROJECTROOT, "cavAuxModList.json")
+    modListPath = os.path.join(PROJECTROOT, providerFile)
     try: 
         modListFile = open(modListPath)
     except FileNotFoundError:
@@ -224,7 +238,7 @@ def main():
     allModsExist=True
     for expectedMod in modListDict['workshop'].keys():
         if not expectedMod in os.listdir(WORKSHOPOUT):
-            print(f"[Error] {modListDict['workshop'][downloadedMod]['name']} [{downloadedMod}] does not exist or have not download properly")
+            print(f"[Error] {modListDict['workshop'][expectedMod]['name']} [{expectedMod}] does not exist or have not download properly")
             allModsExist=False
         else:
             print(f"Mod {modListDict['workshop'][expectedMod]['name']} [{expectedMod}] successfully downloaded...") if args.verbose else ""
