@@ -1,5 +1,26 @@
 {
     "workshop": {
+        "1552807725": {
+            "name": "FA-18-Super-Hornet-BETA",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1552807725",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "2409760971": {
+            "name": "FA-18EF Super Hornet and ace compat",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409760971",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "2351150519": {
+            "name": "Multiple Drones in Inventory",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2351150519",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "1911374016": {
             "name": "Ace Vehicle Medical",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1911374016",
@@ -14,6 +35,13 @@
             "License": "License permits",
             "comment": "Adds panels to condense arsenal screen."
         },
+        "3081740902": {
+            "name": "ACE3 Arsenal Extended - Tier One Weapons",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3081740902",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "2522642015": {
             "name": "ACE3 Arsenal Extended for USP AIO",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2522642015",
@@ -22,7 +50,7 @@
             "comment": "Adds extended arsenal support for USP."
         },
         "2260572637": {
-            "name": "BettIR (Legacy v0.2.1)",
+            "name": "BettIR",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637",
             "requireResigning": false,
             "License": "License permits",
@@ -57,7 +85,7 @@
             "comment": "ACE option to clear brush."
         },
         "2944592059": {
-            "name": "Crew Served Maaws",
+            "name": "Crew Served MAAWS",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2944592059",
             "requireResigning": false,
             "License": "License permits",
@@ -65,20 +93,34 @@
         },
         "2262006564": {
             "name": "cTab 1erGTD",
-            "url": "https://steamcommunity.com/workshop/filedetails/?id=2262006564",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2262006564",
             "requireResigning": false,
             "License": "License permits",
             "comment": "cTab functionality"
         },
         "1713801249": {
-            "name": "dzn MG Tripod",
+            "name": "dzn MG Tripod ",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1713801249",
             "requireResigning": false,
             "License": "License permits",
             "comment": "Tripod for 240/mortars."
         },
+        "1923464093": {
+            "name": "Enhanced Advanced Helicopter Flight Model Mod",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1923464093",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "333310405": {
+            "name": "Enhanced Movement",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=333310405",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "2034363662": {
-            "name": "Enhanced Movement Rework",
+            "name": "Enhanced Movment Rework",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2034363662",
             "requireResigning": false,
             "License": "License permits",
@@ -89,7 +131,14 @@
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2513044572",
             "requireResigning": false,
             "License": "License permits",
-            "comment": "NVG customizations."
+            "comment": ""
+        },
+        "1527490335": {
+            "name": "HAG Objects",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1527490335",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
         },
         "1883956552": {
             "name": "Interiors for CUP",
@@ -119,6 +168,13 @@
             "License": "License permits",
             "comment": "M224 60mm Mortar (ACE)"
         },
+        "2254231199": {
+            "name": "More Smoke Screens",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2254231199",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "1340701737": {
             "name": "NATO Markers +",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1340701737",
@@ -126,12 +182,40 @@
             "License": "License permits",
             "comment": "Adds additional markings."
         },
+        "2127693591": {
+            "name": "Real Engine",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2127693591",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "2013446344": {
             "name": "Simple Map Tools",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2013446344",
             "requireResigning": false,
             "License": "License permits",
             "comment": "Adds interactions on map screen."
+        },
+        "2461607508": {
+            "name": "Simple Supress",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2461607508",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "2039704764": {
+            "name": "Slightly Bounce GL Smoke Shell",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2039704764",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "1808723766": {
+            "name": "Swim Faster",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1808723766",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
         },
         "2021778690": {
             "name": "TFTW Female Characters",
@@ -147,19 +231,26 @@
             "License": "License permits",
             "comment": "Candidate for removal. MC Vests"
         },
+        "2285031150": {
+            "name": "US Equipment Pack",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2285031150",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
+        "2026102601": {
+            "name": "USP Gear Fix",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2026102601",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": ""
+        },
         "3088316904": {
             "name": "Vanilla Weapon Optics: All NVG Compatible",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3088316904",
             "requireResigning": false,
             "License": "License permits",
             "comment": "NVG compatibility for vanilla optics."
-        },
-        "2039704764": {
-            "name": "Slightly Bounce GL Smoke Shell",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2039704764",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": "Bouncy smokes"
         },
         "1578884800": {
             "name": "Window Breaker",
@@ -168,23 +259,9 @@
             "License": "License permits",
             "comment": "Break Windows"
         },
-        "1552807725": {
-            "name": "FA-18-Super-Hornet-BETA",
-            "url": "https://steamcommunity.com/workshop/filedetails/?id=1552807725",
-            "requireResigning": true,
-            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
-            "comment": "Add the FA-18"
-        },
-        "2409760971": {
-            "name": "FA-18EF Super Hornet and ace compat",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409760971",
-            "requireResigning": true,
-            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
-            "comment": "Compat addon for FA-18 that enables use of missles."
-        },
-        "333310405": {
-            "name": "Enhanced Movement",
-            "url": "https://steamcommunity.com/workshop/filedetails/?id=333310405",
+        "2112412853": {
+            "name": "Yagizlar, Turkey",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2112412853",
             "requireResigning": false,
             "License": "License permits",
             "comment": "Base addon required for Enhanced Movement Rework."
