@@ -29,7 +29,7 @@ jobs:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
         run: |
-          $env:Path += ";$PWD\scripts;\C:\Arma3Tools\DSSignFile"
+          $env:Path += ";$PWD\scripts\;C:\Arma3Tools\DSSignFile\"
           echo "Building ${{ github.ref_name }} $env:SHA_SHORT"
           python scripts\assemble.py --username $env:STEAM_USERNAME --password $env:STEAM_PASSWORD -s $env:SHA_SHORT
 
