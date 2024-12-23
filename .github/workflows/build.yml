@@ -13,19 +13,26 @@ jobs:
         uses: arma-actions/hemtt@v1
       - name: Setup steamcmd
         uses: CyberAndrii/setup-steamcmd@v1
+      - name: Install Arma 3 Tools
+        uses: arma-actions/arma3-tools@master
+        with:
+          toolsUrl: ${{ secrets.ARMA3_TOOLS_URL }}
+
       - name: Get short commit hash
         run: |
           git rev-parse --short=8 HEAD
           echo "SHORT_SHA=$(git rev-parse --short=8 HEAD)" >> $GITHUB_ENV
+
       - name: Assemble
         env:
           SHA_SHORT: ${{ env.SHORT_SHA }}
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
         run: |
-          $env:Path += ";$PWD\scripts"
+          $env:Path += ";$PWD\scripts;\C:\Arma3Tools\DSSignFile"
           echo "Building ${{ github.ref_name }} $env:SHA_SHORT"
           python scripts\assemble.py --username $env:STEAM_USERNAME --password $env:STEAM_PASSWORD -s $env:SHA_SHORT
+
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:

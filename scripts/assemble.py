@@ -13,7 +13,10 @@ PROJECTROOT   = os.path.dirname(os.path.dirname(scriptPath))
 
 STEAMCMD      = os.path.join("steamcmd")
 HEMTT         = os.path.join("hemtt")
-ARMAKE        = os.path.join("armake")
+
+KEYCREATE     = os.path.join("DSCreateKey")
+KEYSIGN       = os.path.join("DSSignFile")
+KEYCHECK      = os.path.join("DSCheckSignatures")
 
 WORKDIR       = os.path.join(PROJECTROOT,".cavauxout")
 WORKSHOPOUT   = os.path.join(WORKDIR,"steamapps","workshop","content","107410")
@@ -24,7 +27,7 @@ RELEASEFOLDER = os.path.join(PROJECTROOT,"releases")
 def check_required_tools():
     toolsMissing = False
     print("Checking tools:")
-    for tool in [STEAMCMD, HEMTT, ARMAKE]:
+    for tool in [STEAMCMD, HEMTT, KEYCREATE, KEYSIGN, KEYCHECK]:
         if shutil.which(tool):
             print(' > {}{}'.format(f"{tool}: ".ljust(12), shutil.which(tool)))
         else:
@@ -298,10 +301,12 @@ def main():
     privateKeyName     = f"cavaux_{version}-{commit}"
     privateKeyFullName = f"{privateKeyName}.biprivatekey"
     print(f"Making '{privateKeyName}'...") if args.verbose else ""
+    
     subprocess.run(
-        [ARMAKE, 'keygen', '-f', privateKeyName],
+        [KEYCREATE, privateKeyName],
         shell=True, check=False
     )
+
     keys = glob.glob(os.path.join(releaseKeysFolder,'*'))
 
     # Check if successful
@@ -317,15 +322,29 @@ def main():
     for pbo in glob.glob(os.path.join(releaseAddonFolder,'*.pbo')):
         print(f"Signing {pbo}") if args.verbose else ""
         subprocess.run(
-            [ARMAKE, 'sign', '-f', os.path.join(releaseKeysFolder,privateKeyFullName),pbo],
-            shell=True
+            [KEYSIGN, os.path.join(releaseKeysFolder,privateKeyFullName), pbo],
+            shell=True, check=False
         )
+
         createdKey = glob.glob(os.path.join(releaseKeysFolder,f'{pbo}*.bisign'))
         if not len(createdKey) == 1:
             print(f"[Error] failed to sign {pbo}")
             sys.exit(1)
         print(f"Signing completed {createdKey[0]}") if args.verbose else ""
 
+
+    # Check signing
+    print(f"Checking project signature...")
+    proc = subprocess.run(
+        [KEYCHECK, "-deep", releaseAddonFolder, releaseKeysFolder],
+        shell=True, check=False, capture_output=True, text=True
+    )
+    print(proc.stdout, end="")
+    if proc.returncode >= 1:
+        print(f"[Error] failed to sign pbos")
+        sys.exit(1)
+    print(f"Signing successful") if args.verbose else ""
+    
     os.remove(os.path.join(releaseKeysFolder,privateKeyFullName))
     os.chdir(PROJECTROOT)
 
