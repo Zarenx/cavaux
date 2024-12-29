@@ -278,7 +278,7 @@ def main():
 
     # Copying mods
     for id in os.listdir(WORKSHOPOUT):
-        for pbo in glob.glob(os.path.join(WORKSHOPOUT,id,'**','*.pbo'), recursive=True):
+        for pbo in glob.glob(os.path.join(WORKSHOPOUT,id,'addons','*.pbo'), recursive=True):
             print(f"Copying {os.path.basename(pbo)}") if args.verbose else ""
             shutil.copy2(os.path.join(pbo), releaseAddonFolder)
 
