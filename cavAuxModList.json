@@ -28,13 +28,6 @@
             "License": "License permits",
             "comment": "Adds extended arsenal support for USP."
         },
-        "2260572637": {
-            "name": "BettIR",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": "IR helmet and flashlights"
-        },
         "1314910827": {
             "name": "Breaching Charge",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1314910827",
@@ -217,6 +210,13 @@
             "License": "License permits",
             "comment": "NVG compatibility for vanilla optics."
         },
+        "1578884800": {
+            "name": "Window Breaker",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Break Windows"
+        },
         "2257686620": {
             "name": "Blastcore Murr Edition",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2257686620",
@@ -229,14 +229,14 @@
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2791403093",
             "requireResigning": false,
             "License": "License permits",
-            "comment": "Blastcore Murr Edition"
+            "comment": "Better Inventory"
         },
-        "1578884800": {
-            "name": "Window Breaker",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800",
+        "2833301926": {
+            "name": "SRV LynX - Ultimate Special Forces Vehicle",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2833301926",
             "requireResigning": false,
             "License": "License permits",
-            "comment": "Break Windows"
+            "comment": "Airborne Vehicle"
         }
     }
 }
