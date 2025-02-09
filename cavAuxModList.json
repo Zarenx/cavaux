@@ -1,26 +1,5 @@
 {
     "workshop": {
-        "1552807725": {
-            "name": "FA-18-Super-Hornet-BETA",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1552807725",
-            "requireResigning": false,
-            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
-            "comment": ""
-        },
-        "2409760971": {
-            "name": "FA-18EF Super Hornet and ace compat",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409760971",
-            "requireResigning": false,
-            "License": "Exception: Granted via mod owner Discord by TeteT 29JUN2024",
-            "comment": ""
-        },
-        "2351150519": {
-            "name": "Multiple Drones in Inventory",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2351150519",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": ""
-        },
         "1911374016": {
             "name": "Ace Vehicle Medical",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1911374016",
@@ -224,27 +203,6 @@
             "License": "License permits",
             "comment": ""
         },
-        "2021778690": {
-            "name": "TFTW Female Characters",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2021778690",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": "Adds female faces."
-        },
-        "2371800141": {
-            "name": "TSF JPC 2.0 & LV-119",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2371800141",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": "Candidate for removal. MC Vests"
-        },
-        "2285031150": {
-            "name": "US Equipment Pack",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2285031150",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": ""
-        },
         "2026102601": {
             "name": "USP Gear Fix",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2026102601",
@@ -259,19 +217,26 @@
             "License": "License permits",
             "comment": "NVG compatibility for vanilla optics."
         },
+        "2257686620": {
+            "name": "Blastcore Murr Edition",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2257686620",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Blastcore Murr Edition"
+        },
+        "2791403093": {
+            "name": "Better Inventory",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2791403093",
+            "requireResigning": false,
+            "License": "License permits",
+            "comment": "Blastcore Murr Edition"
+        },
         "1578884800": {
             "name": "Window Breaker",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1578884800",
             "requireResigning": false,
             "License": "License permits",
             "comment": "Break Windows"
-        },
-        "2112412853": {
-            "name": "Yagizlar, Turkey",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2112412853",
-            "requireResigning": false,
-            "License": "License permits",
-            "comment": "Base addon required for Enhanced Movement Rework."
         }
     }
 }
