@@ -11,6 +11,7 @@ scriptPath    = os.path.realpath(__file__)
 scriptRoot    = os.path.dirname(scriptPath)
 PROJECTROOT   = os.path.dirname(os.path.dirname(scriptPath))
 
+GIT           = os.path.join("git")
 STEAMCMD      = os.path.join("steamcmd")
 HEMTT         = os.path.join("hemtt")
 
@@ -27,26 +28,26 @@ RELEASEFOLDER = os.path.join(PROJECTROOT,"releases")
 def check_required_tools():
     toolsMissing = False
     print("Checking tools:")
-    for tool in [STEAMCMD, HEMTT, KEYCREATE, KEYSIGN, KEYCHECK]:
+    for tool in [GIT, STEAMCMD, HEMTT, KEYCREATE, KEYSIGN, KEYCHECK]:
         if shutil.which(tool):
             print(' > {}{}'.format(f"{tool}: ".ljust(12), shutil.which(tool)))
         else:
             print(' > {}Does not exist'.format(f"{tool}: ".ljust(12), shutil.which(tool)))
             toolsMissing = True
     if toolsMissing:
-        print("Error: Vital tools are missing")
+        print("\nError: Vital tools are missing\n       Make sure you have the required tools installed and is present in your PATH variable")
         sys.exit(1)
     print()
 
 
 def get_and_set_version():
-    result = subprocess.run(
-        ["git", "describe", "--tags", "--abbrev=0"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        universal_newlines=True
-    )
     try:
+        result = subprocess.run(
+            ["git", "describe", "--tags", "--abbrev=0"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            universal_newlines=True
+        )
         if result.returncode == 128:
             raise Exception("Warning: No git tags detected using 0.0.0 instead")
         tagVersion = result.stdout
@@ -150,16 +151,24 @@ def handle_hemtt_build(verbose=False):
 def main():
     parser = argparse.ArgumentParser(
         prog='assemble',
-        description='What the program does',
-        epilog='Text at the bottom of help')
-
-    parser.add_argument('-u', '--username', type=str)
-    parser.add_argument('-p', '--password', type=str)
-    parser.add_argument('-C', '--config', type=str)
-    parser.add_argument('-s', '--commit', type=str)
-    parser.add_argument('-d', '--data', type=str)
-    parser.add_argument('--verbose', action='store_true')
-    parser.add_argument('--dryrun', action='store_false')
+        description='This script will download mods from steam workshop, assemble them into a mod and create a release.')
+    
+    parser.add_argument('-u', '--username', type=str,
+                        help='steam username (takes priority over the config file)')
+    parser.add_argument('-p', '--password', type=str,
+                        help='steam password (takes priority over the config file)')
+    parser.add_argument('-C', '--config', type=str,
+                        help='path to config file for username and password (Format: {"username": "","password": ""})')
+    parser.add_argument('-t', '--tag', type=str,
+                        help='(optional) this overwrites the version tag with the provided tag (Required format: 0.0.0.0)')
+    parser.add_argument('-s', '--commit', type=str,
+                        help='(optional) this defines the given current commit id')
+    parser.add_argument('-d', '--data', type=str,
+                        help='(optional) path to mod list json file (default: cavAuxModList.json)')
+    parser.add_argument('--verbose', action='store_true',
+                        help='(optional) show extended logging as well as allow you to use 2fa for steam login.')
+    parser.add_argument('--dryrun', action='store_false',
+                        help='(optional) allow you to skip the download process and use preexisting cache instead')
 
     args = parser.parse_args()
     
@@ -254,7 +263,11 @@ def main():
 
 
     # Assemble and build mod
-    version = get_and_set_version()
+    if args.tag:
+        commit = args.tag
+    else:
+        version = get_and_set_version()
+
     if args.commit:
         commit = args.commit
     else:
